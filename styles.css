@@ -1069,3 +1069,15 @@ button { font: inherit; }
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Manager site: the mobile home has no contact row, so the portrait and actions sit lower. */
+@media (max-width: 1023px) {
+  body.manager-site .hero__portrait {
+    transform: translateY(40px);
+  }
+
+  body.manager-site .hero__actions {
+    transform: translate(-50%, 40px);
+  }
+}
